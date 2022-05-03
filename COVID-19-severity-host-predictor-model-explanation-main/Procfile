@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run COVID_19_host_genetic_predictor_Xplainer_webapp.py
