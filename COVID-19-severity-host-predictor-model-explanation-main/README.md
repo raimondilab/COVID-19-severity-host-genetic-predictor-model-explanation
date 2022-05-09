@@ -3,7 +3,7 @@ Here is a short FAQ about how to use the COVID-19 Host Genetic Severity Predicto
 
 ### Introduction 
 
-In this repository, we are going to build an interactive dashboard for a voting ensemble host genetic severity predictor (HGSP) model we developed with 16 fully supported genetic variants together with clinical covariates (age and gender) identified from a prior study of the Whole Exome Sequencing dataset from 2000 cohort European descent SARS-CoV-2 positive patients. We further utilized the ExplainerDashboard library in Python for the post-hoc model interpretations and explanations for the 3000 cohort follow-up dataset. The Jupyter notebook (.ipynb) and this readme provide the codes and all the relevant information about this web App.
+In this repository, we built an interactive dashboard for a voting ensemble host genetic severity predictor (HGSP) model we developed with 16 fully supported genetic variants together with clinical covariates (age and gender) identified from a prior study of the Whole Exome Sequencing dataset from 2000 cohort European descent SARS-CoV-2 positive patients. We further utilized the ExplainerDashboard library in Python for the post-hoc model interpretations and explanations for the 3000 cohort follow-up dataset. The Jupyter notebook (.ipynb) and this readme provide the codes and all the relevant information about this web App.
 
 1) What is the COVID-19 Host Genetic Severity Predictor Model Web App about?
 
