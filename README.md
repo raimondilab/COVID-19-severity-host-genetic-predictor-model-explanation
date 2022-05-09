@@ -1,4 +1,6 @@
 # COVID-19-severity-host-genetic-predictor-model-explanation
+### Introduction
+
 In this study, we identified 16 candidate genetic variants that are likely determinants of COVID-19 severity outcomes in patients from a prior study we carried out using 
 2000 cohort genetic and clinical datasets (https://doi.org/10.21203/rs.3.rs-1062190/v1). We first used the saved ensemble host COVID-19 severity predictor model 
 we trained with the 2000 cohort dataset and carried out external prediction to validate the model on a follow-up 3000 cohort dataset. 
