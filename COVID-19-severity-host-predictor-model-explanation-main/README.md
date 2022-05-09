@@ -36,3 +36,18 @@ In developing the host genetic severity predictor web application, we used the f
  
 4) Which dataset has been used?
 We are using the WES dataset feature_count_16_full_supported_variants_latest_3000_cohort_arranged_updated.csv' to train the HGSP model and build the interactive post-hoc model explanation dashboard. Details about the HGSP model and the study design and model setup are discussed are found at https://clinicaltrials.gov/ct2/show/NCT04549831, https://doi.org/10.21203/rs.3.rs-1062190/v1.
+
+####Key                                                                     ##### Meaning
+
+COVID_19_host_genetic_predictor_Xplainer_webapp.py = a python script of the HGSP model and post-hoc explanation using the explainer dashboard 
+
+new_data_small_sample.csv = a small size (24 sample points) sample dataframe of 16 fully supported variants and covariates (age and gender) 
+
+feature_count_16_full_supported_variants_latest_3000_cohort_arranged_updated = a large size (618 sample points) sample dataframe of 16 fully supported variants and covariates (age and gender)
+
+ensemble_model_2000_cohort_16_full_support_with_covariates_1 = HGSP saved joblib model 
+
+requirements.txt = requirements containing lists of all the python libraries used to develop the web app.
+
+runtime.txt = a file added to the web app's root directory that declares the exact version number to use.
+
