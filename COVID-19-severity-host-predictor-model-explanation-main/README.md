@@ -37,7 +37,7 @@ In developing the host genetic severity predictor web application, we used the f
 4) Which dataset has been used?
 We are using the WES dataset feature_count_16_full_supported_variants_latest_3000_cohort_arranged_updated.csv' to train the HGSP model and build the interactive post-hoc model explanation dashboard. Details about the HGSP model and the study design and model setup are discussed are found at https://clinicaltrials.gov/ct2/show/NCT04549831, https://doi.org/10.21203/rs.3.rs-1062190/v1.
 
-###Key                                                                     Meaning
+##Key                                                                     Meaning
 
 COVID_19_host_genetic_predictor_Xplainer_webapp.py = a python script of the HGSP model and post-hoc explanation using the explainer dashboard 
 
