@@ -17,9 +17,11 @@ The ensemble model proposed by our study was gotten from the combinations of dec
 First, the user(s) required a WES and clinical covariate (clinical severity outcome grading, age, and gender) dataset. The user(s) will need to curate the 16 variants from the WES dataset, binarize the grading outcome variable (group 1 (severe) = grading 5+4+3 versus group 0 = grading 0), and together with the covariates (age and gender) will be used to develop the feature matrix. There were 18 independent input features and one output variable (patients’ grouping). Upon access to the WebApp, the user(s) are guided with an example dataset in CSV format and a brief video link to the 2000 cohort study. The user(s) drags and drops the CSV file and clicks the sidebar button to select “model prediction” or “explanation”. We provided these options should in case a user may not be interested in the model prediction and will rather prefer to see the model explanation or vice versa. If the model prediction option is selected for example the user will further select the different performance evaluation metrics (Confusion matrix plot, precision-recall curve, ROC-AUC curve). The performance metrics (accuracy, precision, and recall scores) will pop out alongside the plots. If the user seeks further explanations, can go ahead to click the “explanation” button to see the explanation of the model via the explainer dashboard approach. However, the results for the explanation will take some time if there are many samples (rows) due to the explainer dashboard using the SHAP permutation explanation approaches to calculate the feature importance, hence, perturbing individual’s explanations, and other performance metrics. The explainer dashboard URL is built into the WebApp to display the rightful explanations for the users without having to run it locally on their computer. Users can save the visualization metrics of interest in PDF, Html, JPEG, or PNG file formats.
 
 2) What is ExplainerDashboard?
+
 ExplainerDashboard is a library for quickly building interactive dashboards for analyzing and explaining the predictions and workings of (scikit-learn compatible) machine learning models, including random forest, xgboost, catboost, and lightgbm. This makes your model transparent and explainable with just two lines of code. It is a python package that generates interactive dashboards which allow users to understand as well as explain how the model works and how it is deciding the outcome. Without such a tool, a machine learning model is a “Black Box model”. Hence, it becomes difficult to explain the reason behind the decision made by the model and which factors are impacting its decision-making.
 
 3) Which libraries have been used for the creation of the dashboard?
+
 In developing the host genetic severity predictor web application, we used the following libraries:
 -	streamlit==0.71.0
 -	pandas==1.1.3
@@ -35,9 +37,10 @@ In developing the host genetic severity predictor web application, we used the f
  Using these packages in Python, we deployed the HGSP model and the post-hoc model explanation using the explainer dashboard as a web app in Heroku, Jupyter, or Colab notebooks.
  
 4) Which dataset has been used?
+
 We are using the WES dataset feature_count_16_full_supported_variants_latest_3000_cohort_arranged_updated.csv' to train the HGSP model and build the interactive post-hoc model explanation dashboard. Details about the HGSP model and the study design and model setup are discussed are found at https://clinicaltrials.gov/ct2/show/NCT04549831, https://doi.org/10.21203/rs.3.rs-1062190/v1.
 
-#### Key/                                                                    Meaning
+5) Key/Meaning
 
 COVID_19_host_genetic_predictor_Xplainer_webapp.py = a python script of the HGSP model and post-hoc explanation using the explainer dashboard 
 
